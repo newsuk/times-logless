@@ -1,0 +1,64 @@
+{
+  "name": "@times/logless",
+  "version": "1.0.0",
+  "description": "A simple logger",
+  "main": "lib/logless.js",
+  "scripts": {
+    "flow": "flow .",
+    "flow:coverage": "flow-coverage-report -i index.js -i 'src/**/*.js' --threshold=99",
+    "flow:coverage-report": "npm run flow:coverage -- -t html",
+    "eslint": "eslint index.js src/ __tests__/",
+    "fmt": "prettier --write '**/*.*'",
+    "fmt:diff": "prettier --list-different '**/*.*'",
+    "lint": "npm run flow && npm run flow:coverage && npm run eslint && yarn fmt:diff",
+    "test": "jest --coverage",
+    "prepack": "npm run prepack:babel && npm run prepack:flow",
+    "prepack:babel": "babel src/ -d lib",
+    "prepack:flow": "flow-copy-source src lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/logless.git"
+  },
+  "keywords": [
+    "logger",
+    "log"
+  ],
+  "author": "NewsUK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newsuk/logless/issues"
+  },
+  "homepage": "https://github.com/newsuk/logless#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-import": "^2.8.0",
+    "flow-bin": "^0.64.0",
+    "flow-copy-source": "^1.2.2",
+    "flow-coverage-report": "^0.4.1",
+    "jest": "^22.1.4",
+    "prettier": "^1.10.2"
+  },
+  "dependencies": {
+    "json-stringify-safe": "^5.0.1"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/fixtures/",
+      "<rootDir>/dist/"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/__tests__/"
+    ]
+  }
+}

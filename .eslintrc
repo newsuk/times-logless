@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "plugin:flowtype/recommended",
+    "airbnb-base",
+    "prettier"
+  ],
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "import/extensions": "off"
+  },
+  "root": true
+}

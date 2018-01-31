@@ -1,0 +1,18 @@
+## generic
+**/node_modules/*
+**/coverage/*
+**/flow-coverage/*
+**/flow-typed/*
+dist
+__snapshots__
+CHANGELOG.md
+.*
+**/package.json
+LICENSE
+yarn.lock
+
+# specific to root
+*.yml
+*.html
+*.sh
+*.log
