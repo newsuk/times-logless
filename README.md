@@ -1,4 +1,4 @@
-# Logless
+# times-logless
 
 ## About
 
@@ -41,6 +41,23 @@ const log = loggerFactory(config, requestID);
 log("something's up!");
 ```
 
+## API
+
+**Available log levels:** silly|debug|verbose|info|warn|error
+
+`factory(config, requestId)`:
+- `config` (object): { logLevel, logFn }
+  - `logLevel` (string): the level of logging. All levels below this will not be logged
+  - `logFn` (function): custom log function (if ommited uses `console.log`)
+- `requestId` (string): the id of the request being logged
+
+Returns a log function.
+
+`log(message)`:
+- `message` (string): the message to be logged
+
+Returns void.
+
 ## Contributing
 
-See the CONTRIBUTING.md for an extensive breakdown of the project
+See the CONTRIBUTING.md for a breakdown of the project

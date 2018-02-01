@@ -28,7 +28,7 @@
     "log"
   ],
   "author": "NewsUK",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/newsuk/logless/issues"
   },
