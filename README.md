@@ -60,4 +60,4 @@ Returns void.
 
 ## Contributing
 
-See the CONTRIBUTING.md for an extensive breakdown of the project
+See the CONTRIBUTING.md for a breakdown of the project
