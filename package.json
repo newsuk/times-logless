@@ -1,5 +1,5 @@
 {
-  "name": "@times/logless",
+  "name": "@thetimes/logless",
   "version": "1.0.0",
   "description": "A simple logger",
   "main": "lib/logless.js",
@@ -60,5 +60,8 @@
     "coveragePathIgnorePatterns": [
       "<rootDir>/__tests__/"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
