@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/newsuk/logless.git"
+    "url": "git+https://github.com/newsuk/times-logless.git"
   },
   "keywords": [
     "logger",
@@ -30,9 +30,9 @@
   "author": "NewsUK",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/newsuk/logless/issues"
+    "url": "https://github.com/newsuk/times-logless/issues"
   },
-  "homepage": "https://github.com/newsuk/logless#readme",
+  "homepage": "https://github.com/newsuk/times-logless#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
