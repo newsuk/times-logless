@@ -1,4 +1,4 @@
-# times-logless
+# logless
 
 ## About
 
@@ -7,13 +7,13 @@ Logless is a lightweight logging library specially crafted for serverless apps.
 ## Install
 
 ```shell
-npm install --save @times/logless
+npm install --save @thetimes/logless
 ```
 
 ## Usage
 
 ```javascript
-const loggerFactory = require("@times/logless");
+const loggerFactory = require("@thetimes/logless");
 
 const config = { logLevel: "debug" };
 
@@ -27,7 +27,7 @@ log("something's up!");
 By default _logless_ uses `console.log` as a log function. But you can define your own by passing it as a config parameter:
 
 ```javascript
-const loggerFactory = require("@times/logless");
+const loggerFactory = require("@thetimes/logless");
 
 const myCustomLogFunction = msg => process.stdout.write(msg);
 
