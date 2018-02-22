@@ -84,9 +84,7 @@ module.exports = (
       }
     },
     error(message) {
-      if (logLevelNumber >= logLevels.error) {
-        logFn(formatMessage("error", message, { requestId }));
-      }
+      logFn(formatMessage("error", message, { requestId }));
     }
   };
 };
