@@ -12,6 +12,7 @@
     "fmt:diff": "prettier --list-different '**/*.*'",
     "lint": "npm run flow && npm run flow:coverage && npm run eslint && yarn fmt:diff",
     "test": "jest --coverage",
+    "send-coveralls": "cat ./coverage/lcov.info | coveralls",
     "prepack": "npm run prepack:babel && npm run prepack:flow",
     "prepack:babel": "babel src/ -d lib",
     "prepack:flow": "flow-copy-source src lib"
@@ -38,6 +39,7 @@
     "babel-eslint": "^8.2.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
+    "coveralls": "^3.0.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
