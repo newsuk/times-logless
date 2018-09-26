@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple logger",
   "main": "lib/logless.js",
+  "typings": "ts/logless.d.ts",
   "scripts": {
     "flow": "flow .",
     "flow:coverage": "flow-coverage-report -i index.js -i 'src/**/*.js' --threshold=99",
